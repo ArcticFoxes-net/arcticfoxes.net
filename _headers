@@ -1,14 +1,14 @@
 /
-  Content-Security-Policy : default-src 'self'; font-src 'self' fonts.gstatic.com; style-src 'self' fonts.googleapis.com; script-src 'self' 'unsafe-inline'; form-action 'none'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'none'
+  Strict-Transport-Security : max-age=63072000; includeSubDomains; preload
+  Content-Security-Policy : default-src 'self'; font-src 'self' fonts.gstatic.com; style-src 'self' fonts.googleapis.com; script-src 'self' 'unsafe-inline'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests; block-all-mixed-content; base-uri 'none'
   X-Content-Type-Options : nosniff
   Referrer-Policy : no-referrer
-  Cross-Origin-Opener-Policy : same-origin
-  Cross-Origin-Embedder-Policy : require-corp
   X-Frame-Options : DENY
   X-XSS-Protection : 0
   Permissions-Policy : accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), clipboard-read=(), clipboard-write=(), display-capture=(), document-domain=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), idle-detection=(), interest-cohort=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), usb=(), sync-xhr=(), xr-spatial-tracking=()
+  Cross-Origin-Opener-Policy : same-origin
+  Cross-Origin-Embedder-Policy : require-corp
   Cross-Origin-Resource-Policy : same-origin
-  Expect-CT: enforce, max-age=63072000
 
 /.well-known/matrix/server
   Access-Control-Allow-Origin : *
@@ -17,3 +17,6 @@
 /.well-known/matrix/client
   Access-Control-Allow-Origin : *
   Content-Type : application/json
+
+/.well-known/openpgpkey/hu/*
+  Access-Control-Allow-Origin: *
