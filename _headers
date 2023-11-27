@@ -10,11 +10,7 @@
   Cross-Origin-Embedder-Policy : require-corp
   Cross-Origin-Resource-Policy : same-origin
 
-/.well-known/matrix/server
-  Access-Control-Allow-Origin : *
-  Content-Type : application/json
-
-/.well-known/matrix/client
+/.well-known/matrix/*
   Access-Control-Allow-Origin : *
   Content-Type : application/json
 
