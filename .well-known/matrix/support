@@ -1,7 +1,9 @@
 {
 	"contacts": [
 		{
-			"matrix_id": "@tommy:arcticfoxes.net",
+			"matrix_id": "@support:arcticfoxes.net",
+			"role": "m.role.admin"
+		}, {
 			"email_address": "contact@tommytran.io",
 			"role": "m.role.admin"
 		}, {
@@ -12,5 +14,5 @@
 			"role": "m.role.admin"
 		}
 	],
-	"support_page": "https://matrix.to/#/!rDupCPSbLkmieTosZU:arcticfoxes.net?via=arcticfoxes.net&via=matrix.org&via=jameskitt616.one"
+	"support_page": "https://matrix.to/#/%40support%3Aarcticfoxes.net"
 }
